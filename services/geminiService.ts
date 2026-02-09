@@ -1,6 +1,6 @@
 import { Agent, Message, ReportData } from "../types";
 
-const LOCAL_LLM_URL = "http://210.212.207.65:30124/askgemini";
+const LOCAL_LLM_URL = "http://103.147.113.70:30124/askgemini";
 
 /**
  * Helper retry wrapper
