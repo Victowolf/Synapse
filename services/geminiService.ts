@@ -18,9 +18,7 @@ async function callGeminiWithRetry<T>(fn: () => Promise<T>, retries = 3, delay =
   }
 }
 
-/**
- * Local LLM call
- */
+
 async function callLocalLLM(prompt: string): Promise<string> {
   const form = new FormData();
   form.append("prompt", prompt);
@@ -38,9 +36,7 @@ async function callLocalLLM(prompt: string): Promise<string> {
   return (data?.response ?? "").trim();
 }
 
-/**
- * Generate agent reply
- */
+
 export async function generateAgentReply(
   agent: Agent,
   topic: string,
