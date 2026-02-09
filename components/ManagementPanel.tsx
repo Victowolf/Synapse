@@ -47,13 +47,13 @@ const ManagementPanel: React.FC<ManagementPanelProps> = ({
   return (
     <div className="w-80 h-full border-l border-neutral-200 p-6 flex flex-col gap-8 bg-white overflow-y-auto">
       <section>
-        <h2 className="text-[10px] font-bold text-neutral-400 uppercase tracking-widest mb-6">
+        <h2 className="text-[10px] font-bold text-neutral-500 uppercase tracking-widest mb-6">
           Agent Inventory ({agents.length}/10)
         </h2>
         <div className="space-y-3">
           {agents.length === 0 && (
             <div className="p-4 border border-dashed border-neutral-200 rounded text-center">
-              <p className="text-[10px] text-neutral-300 uppercase tracking-widest">
+              <p className="text-[10px] text-neutral-500 uppercase tracking-widest">
                 No subjects enlisted
               </p>
             </div>
@@ -96,7 +96,7 @@ const ManagementPanel: React.FC<ManagementPanelProps> = ({
       <div className="h-[1px] w-full bg-neutral-100" />
 
       <section className="flex-1 flex flex-col">
-        <h2 className="text-[10px] font-bold text-neutral-400 uppercase tracking-widest mb-6">
+        <h2 className="text-[10px] font-bold text-neutral-500 uppercase tracking-widest mb-6">
           Analytical Processing
         </h2>
         <div className="flex-1 flex flex-col items-center justify-center p-6 border border-neutral-50 rounded bg-neutral-50/30 text-center">

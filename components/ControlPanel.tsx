@@ -39,7 +39,7 @@ const ControlPanel: React.FC<ControlPanelProps> = ({
         <h1 className="text-2xl font-light tracking-tighter text-neutral-800">
           SYNAPSE
         </h1>
-        <p className="text-[10px] uppercase tracking-[0.2em] text-neutral-400 font-medium">
+        <p className="text-[10px] uppercase tracking-[0.2em] text-neutral-500 font-medium">
           Cognitive Behavioural Sandbox
         </p>
         <div className="h-[1px] w-full bg-neutral-100 mt-4" />
@@ -56,7 +56,7 @@ const ControlPanel: React.FC<ControlPanelProps> = ({
       </section>
 
       <section className="flex flex-col gap-3">
-        <label className="text-[10px] font-bold text-neutral-400 uppercase tracking-widest">
+        <label className="text-[10px] font-bold text-neutral-500 uppercase tracking-widest">
           Discussion Parameter
         </label>
         <textarea
@@ -68,7 +68,7 @@ const ControlPanel: React.FC<ControlPanelProps> = ({
       </section>
 
       <section className="flex flex-col gap-3">
-        <label className="text-[10px] font-bold text-neutral-400 uppercase tracking-widest">
+        <label className="text-[10px] font-bold text-neutral-500 uppercase tracking-widest">
           Duration Profile
         </label>
         <div className="grid grid-cols-2 gap-2">

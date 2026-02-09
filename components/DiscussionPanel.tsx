@@ -49,11 +49,11 @@ const DiscussionPanel: React.FC<DiscussionPanelProps> = ({ messages }) => {
           <div
             className={`w-2 h-2 rounded-full ${stableMessages.length > 0 ? "bg-green-500 animate-pulse" : "bg-neutral-300"}`}
           />
-          <span className="text-[10px] font-bold text-neutral-400 uppercase tracking-widest">
+          <span className="text-[10px] font-bold text-neutral-500 uppercase tracking-widest">
             Live Observation Feed
           </span>
         </div>
-        <div className="text-[10px] mono text-neutral-300 uppercase tracking-tighter">
+        <div className="text-[10px] mono text-neutral-500 uppercase tracking-tighter">
           Cognitive Stream Analysis v4.0
         </div>
       </header>
@@ -64,8 +64,8 @@ const DiscussionPanel: React.FC<DiscussionPanelProps> = ({ messages }) => {
         className="flex-1 overflow-y-auto px-6 md:px-12 py-8 space-y-6 scroll-smooth"
       >
         {stableMessages.length === 0 && (
-          <div className="h-full flex flex-col items-center justify-center text-neutral-300 opacity-50 space-y-4">
-            <div className="w-px h-16 bg-neutral-200" />
+          <div className="h-full flex flex-col items-center justify-center text-neutral-500 opacity-100 space-y-4">
+            <div className="w-px h-16 bg-neutral-500" />
             <p className="text-[10px] uppercase tracking-[0.3em] font-medium">
               Waiting for Simulation Launch
             </p>
@@ -141,8 +141,8 @@ const DiscussionPanel: React.FC<DiscussionPanelProps> = ({ messages }) => {
         </div>
       )}
 
-      <footer className="h-12 border-t border-neutral-100 flex items-center px-8 bg-neutral-50/50">
-        <p className="text-[9px] text-neutral-400 uppercase tracking-widest font-bold">
+      <footer className="h-12 border-t border-neutral-300 flex items-center px-8 bg-neutral-50/50">
+        <p className="text-[9px] text-neutral-500 uppercase tracking-widest font-bold">
           {stableMessages.length > 0
             ? `Active Cognitive Stream: ${stableMessages.filter((m) => !m.isSystem).length} responses generated`
             : "Simulation Ready"}
